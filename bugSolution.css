@@ -1,0 +1,14 @@
+The issue can be resolved by switching to flexbox.  Here's the corrected CSS:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /* Add this for accurate width calculation */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+```
+
+Flexbox handles the distribution of space more reliably, regardless of whether the parent's width is evenly divisible.  Adding `box-sizing: border-box;` ensures the width is calculated correctly, including padding and border.
