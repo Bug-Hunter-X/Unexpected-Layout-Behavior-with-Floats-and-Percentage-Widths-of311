@@ -1,0 +1,10 @@
+The following CSS rule is causing unexpected behavior:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This CSS rule attempts to make divs take up 50% of their parent container's width and float left.  However, this can lead to unexpected behavior if the parent container's width is not an even multiple of the div's width (50%). This can cause layout issues and unexpected wrapping.
